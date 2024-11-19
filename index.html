@@ -15,23 +15,25 @@
 <body>
     <div class="forecast">
         <header>
-            <form><input type="search" placeholder="Enter city" required />
-                <input type="submit" />
+            <form class="search-form"><input type="search" placeholder="Enter city" required
+                    class="search-form-input" />
+                <input type="submit" class="submit-button" />
             </form>
         </header>
         <main>
-            <div>
-                <h1>Johanesburg</h1>
-                <p>Monday 13:27 Mostly Sunny
-                    <br />
-                    Humidity: 28, Wind: 19km/h
-                </p>
-            </div>
-            <div>☀️28&degC;</div>
-
-
-
-
+            <div class="forecast-data">
+                <div>
+                    <h1 class="forecast-city">Johanesburg</h1>
+                    <p class="forecast-details">Monday 13:27 Mostly Sunny
+                        <br />
+                        Humidity: <strong>28</strong> Wind: <strong>19km/h</strong>
+                    </p>
+                </div>
+                <div class="forecast-temperature">
+                    <div class="forecast-icon">☀️</div>
+                    <div class="forecast-value">28</div>
+                    <div class="forecast-unit">°C</div>
+                </div>
         </main>
         <footer>Coded by <a href="https://github.com/EleneU" target="_blank">Elene Ubisi</a>, code hosted on <a
                 href="https://github.com/EleneU?tab=repositories" target="_blank">Github</a> and website hosted on <a
