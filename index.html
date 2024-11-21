@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -25,15 +25,15 @@
         <main>
             <div class="forecast-data">
                 <div>
-                    <h1 class="forecast-city" id="forecast-city">Johanesburg</h1>
-                    <p class="forecast-details">Monday 13:27 Mostly Sunny
+                    <h1 class="forecast-city" id="city">Johanesburg</h1>
+                    <p class="forecast-details"> <span id="time"></span><span id="description">Sunny</span>
                         <br />
-                        Humidity: <strong>28</strong> Wind: <strong>19km/h</strong>
+                        Humidity: <strong id="humidity"></strong> Wind: <strong id="wind-speed"></strong>
                     </p>
                 </div>
                 <div class="forecast-temperature">
                     <div class="forecast-icon">☀️</div>
-                    <div class="forecast-value">28</div>
+                    <div class="forecast-value" id="temperature">28</div>
                     <div class="forecast-unit">°C</div>
                 </div>
         </main>
