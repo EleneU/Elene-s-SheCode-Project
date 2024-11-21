@@ -34,10 +34,11 @@ main {
   font-size: 65px;
   font-weight: bold;
   margin-left: 10px;
+  line-height: 58px;
 }
 .forecast-icon {
-  font-size: 34px;
-  margin-top: 22px;
+  width: 58px;
+  height: 58px;
 }
 .forecast-unit {
   margin-top: 16px;

@@ -7,6 +7,10 @@ function updateForecast(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.date.time * 1000);
+  let iconElement = document.querySelector("#forecast-icon");
+
+  iconElement.innerHTML =
+    '<img src="${response.data.condition.icon_url}" class="forecast-icon"/>';
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.conditon.description;
   timeElement.innerHTML = formatDate(date);
